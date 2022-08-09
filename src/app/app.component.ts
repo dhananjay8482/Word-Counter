@@ -22,7 +22,10 @@ export class AppComponent {
     this.words = arrayWords.slice(0,this.limit).join(" ");
   }
 
-  
+  generateRandom(){
+    let random:number = Math.trunc(Math.random()*50);
+    this.words = arrayWords.slice(0,random).join(" ");
+  }
   
 
 
